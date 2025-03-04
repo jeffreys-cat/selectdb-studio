@@ -57,7 +57,7 @@ export default function Home() {
       <div className="mb-20">
         <BentoDemo />
       </div>
-      <div className="pb-10 mb-10">
+      <div className="mb-20">
         <AplhaTestingPlan />
       </div>
       {/* <div className="relative flex flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
