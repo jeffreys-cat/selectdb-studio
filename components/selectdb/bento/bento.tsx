@@ -1,5 +1,5 @@
 import { CalendarIcon, FileTextIcon } from "@radix-ui/react-icons";
-import { BellIcon, Calendar, Share2Icon } from "lucide-react";
+import { BellIcon, Calendar, ChartSpline, ChevronsLeftRightEllipsis, CloudUpload, FileCode2, Logs, PictureInPicture2, ScrollText, Share2Icon, ShieldCheck } from "lucide-react";
 import Image from "next/image";
 
 import { cn } from "@/lib/utils";
@@ -33,7 +33,7 @@ const files = [
 
 const features = [
   {
-    Icon: FileTextIcon,
+    Icon: FileCode2,
     name: "智能 SQL 编辑器",
     description:
       "专为 Doris 语法设计，提供实时语法高亮与自动补全，让 SQL 编写更高效。",
@@ -75,7 +75,7 @@ const features = [
     ),
   },
   {
-    Icon: BellIcon,
+    Icon: ChartSpline,
     name: "可视化 Profile",
     description: "直观展示查询执行计划，帮助快速定位性能瓶颈，优化 SQL 语句。",
     href: "#",
@@ -87,7 +87,7 @@ const features = [
     ),
   },
   {
-    Icon: FileTextIcon,
+    Icon: ChevronsLeftRightEllipsis,
     name: "会话管理",
     description: "实时监控会话状态，支持终止异常连接。保障系统稳定运行。",
     href: "#",
@@ -96,7 +96,7 @@ const features = [
     background: <div></div>,
   },
   {
-    Icon: Share2Icon,
+    Icon: Logs,
     name: "日志检索与可视化分析",
     description:
       "基于 Doris 日志存储，支持快速全文搜索和多维度过滤，并通过直观图表展示日志趋势，兼容 Variant 类型。",
@@ -109,7 +109,7 @@ const features = [
     ),
   },
   {
-    Icon: FileTextIcon,
+    Icon: ScrollText,
     name: "审计日志查看",
     description: "一键查询审计日志，跟踪操作历史，强化数据安全和合规性。",
     href: "#",
@@ -118,7 +118,7 @@ const features = [
     background: <div></div>,
   },
   {
-    Icon: FileTextIcon,
+    Icon: CloudUpload,
     name: "导入任务",
     description:
       "可视化查看导入任务，浏览导入任务的运行进度和状态",
@@ -138,7 +138,7 @@ const features = [
   //   background: <div></div>,
   // },
   {
-    Icon: FileTextIcon,
+    Icon: ShieldCheck,
     name: "安全合规",
     description:
       "不存储用户数据，不上传云端，确保数据安全与隐私，满足企业级安全合规要求。",
@@ -148,7 +148,7 @@ const features = [
     background: <div></div>,
   },
   {
-    Icon: FileTextIcon,
+    Icon: PictureInPicture2,
     name: "多连接与SSH隧道",
     description:
       "支持同时连接多个Doris数据库，并提供SSH隧道功能，安全访问内网环境中的数据库资源。",
