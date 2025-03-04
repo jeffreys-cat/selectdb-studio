@@ -39,7 +39,7 @@ const features = [
       "专为 Doris 语法设计，提供实时语法高亮与自动补全，让 SQL 编写更高效。",
     href: "#",
     cta: "Learn more",
-    className: "col-span-4 lg:col-span-1",
+    className: "col-span-4 lg:col-span-1 lg:row-span-0",
     background: (
       <div></div>
       // <Marquee className="absolute [--duration:20s] [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)]">
@@ -161,7 +161,7 @@ const features = [
 
 export function BentoDemo() {
   return (
-    <BentoGrid>
+    <BentoGrid className="auto-rows-[12.6rem]">
       {features.map((feature, idx) => (
         <BentoCard key={idx} {...feature} />
       ))}
