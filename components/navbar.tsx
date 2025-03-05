@@ -16,17 +16,17 @@ import { LogoI } from "./Logo";
 import { Icons } from "./icons";
 
 export const NAVLINKS = [
-  {
-    title: "Learn",
-    href: `/docs${page_routes[0].href}`,
-  },
-  {
-    title: "Blog",
-    href: "/blog",
-  },
+  // {
+  //   title: "Learn",
+  //   href: `/docs${page_routes[0].href}`,
+  // },
+  // {
+  //   title: "Blog",
+  //   href: "/blog",
+  // },
   {
     title: "Guides",
-    href: "#",
+    href: `/docs${page_routes[0].href}`,
   },
 ];
 
@@ -56,9 +56,9 @@ export function Navbar() {
             <div className="sm:flex hidden">
               <Logo />
             </div>
-            {/* <div className="lg:flex hidden items-center gap-4 text-sm font-medium text-muted-foreground">
+            <div className="lg:flex hidden items-center gap-4 text-sm font-medium text-muted-foreground">
               <NavMenu />
-            </div> */}
+            </div>
           </div>
         </div>
 
@@ -114,35 +114,35 @@ export function Logo() {
   );
 }
 
-// export function NavMenu({ isSheet = false }) {
-//   return (
-//     <>
-//       {NAVLINKS.map((item) => {
-//         const Comp = (
-//           <Anchor
-//             key={item.title + item.href}
-//             activeClassName="!text-primary md:font-semibold font-medium"
-//             absolute
-//             className="flex items-center gap-1 dark:text-stone-300/85 text-stone-800"
-//             href={item.href}
-//           >
-//             {item.title}{" "}
-//             {item.external && (
-//               <MoveUpRightIcon
-//                 className="w-3 h-3 align-super"
-//                 strokeWidth={3}
-//               />
-//             )}
-//           </Anchor>
-//         );
-//         return isSheet ? (
-//           <SheetClose key={item.title + item.href} asChild>
-//             {Comp}
-//           </SheetClose>
-//         ) : (
-//           Comp
-//         );
-//       })}
-//     </>
-//   );
-// }
+export function NavMenu({ isSheet = false }) {
+  return (
+    <>
+      {NAVLINKS.map((item) => {
+        const Comp = (
+          <Anchor
+            key={item.title + item.href}
+            activeClassName="!text-primary md:font-semibold font-medium"
+            absolute
+            className="flex items-center gap-1 dark:text-stone-300/85 text-stone-800"
+            href={item.href}
+          >
+            {item.title}{" "}
+            {/* {item.external && (
+              <MoveUpRightIcon
+                className="w-3 h-3 align-super"
+                strokeWidth={3}
+              />
+            )} */}
+          </Anchor>
+        );
+        return isSheet ? (
+          <SheetClose key={item.title + item.href} asChild>
+            {Comp}
+          </SheetClose>
+        ) : (
+          Comp
+        );
+      })}
+    </>
+  );
+}
