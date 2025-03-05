@@ -19,16 +19,16 @@ export default function Home() {
   return (
     <>
       <div className="relative flex sm:min-h-[71vh] min-h-[68vh] flex-col items-center justify-center text-center px-2 py-8">
-      <AnimatedGridPattern
-        numSquares={60}
-        maxOpacity={0.1}
-        duration={3}
-        repeatDelay={1}
-        className={cn(
-          "[mask-image:radial-gradient(500px_circle_at_center,white,transparent)]",
-          "inset-x-0 inset-y-[-30%] h-[200%] skew-y-12",
-        )}
-      />
+        <AnimatedGridPattern
+          numSquares={60}
+          maxOpacity={0.1}
+          duration={3}
+          repeatDelay={1}
+          className={cn(
+            "[mask-image:radial-gradient(500px_circle_at_center,white,transparent)]",
+            "inset-x-0 inset-y-[-30%] h-[200%] skew-y-12"
+          )}
+        />
         <Link
           href=""
           target="_blank"
@@ -39,7 +39,7 @@ export default function Home() {
         </Link>
         <h1 className="text-3xl font-bold mb-4 sm:text-7xl">SelectDB Studio</h1>
         <p className="mb-8 sm:text-xl max-w-[800px] text-muted-foreground">
-          It is designed to be simple and easy to understand for beginners.
+          Designed and developed specifically for Apache Doris.
         </p>
         <div className="flex flex-row items-center gap-5">
           <GET />
