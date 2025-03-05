@@ -12,7 +12,7 @@ import { downloadUrl } from "@/lib/app-config";
 import Link from "next/link";
 import Image from "next/image";
 
-export function AplhaTestingPlan() {
+export function AlphaTestingPlan() {
   return (
     <div className="flex flex-col items-center justify-center text-center px-2 py-8">
       <NeonGradientCard className="p-0 max-w-lg items-center justify-center text-center">
@@ -22,7 +22,7 @@ export function AplhaTestingPlan() {
         <CardHeader>
           <CardTitle>内部员工测试</CardTitle>
           <CardDescription>
-            Aplha 版本测试，您的反馈将帮助我们打造更好的产品。
+            Alpha 版本测试，您的反馈将帮助我们打造更好的产品。
           </CardDescription>
         </CardHeader>
         <CardContent>

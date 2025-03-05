@@ -23,7 +23,7 @@ export function MagicCardDemo() {
         <CardHeader>
           <CardTitle>内部员工测试</CardTitle>
           <CardDescription>
-            Aplha 版本测试，您的反馈将帮助我们打造更好的产品。
+            Alpha 版本测试，您的反馈将帮助我们打造更好的产品。
           </CardDescription>
         </CardHeader>
         <CardContent>

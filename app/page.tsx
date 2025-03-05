@@ -9,7 +9,7 @@ import { CoolMode } from "@/components/magicui/cool-mode";
 import { Button } from "@/components/ui/button";
 import { CoolModeBuuton } from "@/components/selectdb/coolmode";
 import { BentoDemo } from "@/components/selectdb/bento/bento";
-import { AplhaTestingPlan } from "@/components/selectdb/aplha-testing-plan/aplha-testing-plan";
+import { AlphaTestingPlan } from "@/components/selectdb/alpha-testing-plan/aplha-testing-plan";
 import { MacbookScroll } from "@/components/selectdb/macbook-scroll";
 import { DotPattern } from "@/components/magicui/dot-pattern";
 import { cn } from "@/lib/utils";
@@ -58,7 +58,7 @@ export default function Home() {
         <BentoDemo />
       </div>
       <div className="mb-20">
-        <AplhaTestingPlan />
+        <AlphaTestingPlan />
       </div>
       {/* <div className="relative flex flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
         <Video />

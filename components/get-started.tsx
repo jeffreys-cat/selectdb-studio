@@ -10,7 +10,7 @@ export function GET() {
 
   return (
     <Link
-      href={`https://test-cdn-selectdb.oss-cn-beijing.aliyuncs.com/selectdb-studio/SelectDB%20Studio-1.0.0-aplha.24-arm64.dmg`}
+      href={`https://test-cdn-selectdb.oss-cn-beijing.aliyuncs.com/selectdb-studio/SelectDB%20Studio-1.0.0-alpha.24-arm64.dmg`}
       download
     >
       <ShinyButton>下载 Mac Alpha</ShinyButton>
